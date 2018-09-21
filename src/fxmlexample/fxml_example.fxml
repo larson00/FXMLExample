@@ -8,9 +8,15 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
-<GridPane
+<?import java.net.URL?>
+<GridPane fx:controller="fxmlexample.FXMLExampleController"
   xmlns:fx="http://javafx.com/fxml"
-  alignment="center" hgap="10" vgap="10">
+  alignment="center" hgap="10" vgap="10"
+  styleClass="root">
+  <Text id="welcome-text" text="Welcome"
+    GridPane.columnIndex="0" GridPane.rowIndex="0"
+    GridPane.columnSpan="2"/>
+
   <fx:script>
     function handleSubmitButtonAction() {
       actiontarget.setText("Calling the JavaScript");
@@ -18,10 +24,6 @@
      </fx:script>
 
   <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
-
-  <Text text="Welcome"
-    GridPane.columnIndex="0" GridPane.rowIndex="0"
-    GridPane.columnSpan="2"/>
 
   <Label text="User Name:"
     GridPane.columnIndex="0" GridPane.rowIndex="1"/>
@@ -42,5 +44,8 @@
 
   <Text fx:id="actiontarget"
     GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
 
 </GridPane>
