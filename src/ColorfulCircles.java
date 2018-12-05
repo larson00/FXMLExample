@@ -78,6 +78,7 @@ public class ColorfulCircles extends Application {
     }
 // play 40s of animation
     timeline.play();
+    System.out.println("");
 
     primaryStage.show();
   }
