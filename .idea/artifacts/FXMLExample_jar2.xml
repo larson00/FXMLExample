@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FXMLExample:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/FXMLExample_jar2</output-path>
+    <root id="archive" name="FXMLExample.jar">
+      <element id="module-output" name="FXMLExample" />
+    </root>
+  </artifact>
+</component>
